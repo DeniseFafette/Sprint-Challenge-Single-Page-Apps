@@ -23,11 +23,6 @@ const CharacterList = ( {values, errors, touched,  status}) => {
       console.error('Server Error', error);
     });
   }
-
-  }
-    // TODO: Add API Request here - must run in `useEffect`
-    //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
-
   return (
     <section className="character-list">
       <h2>Characters</h2>
@@ -40,4 +35,11 @@ const CharacterList = ( {values, errors, touched,  status}) => {
       ))}
     </section>
   );
-};
+
+  }
+    // TODO: Add API Request here - must run in `useEffect`
+    //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
+
+  
+
+export default CharacterList;
