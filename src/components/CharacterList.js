@@ -6,6 +6,10 @@ const CharacterList = ( {values, errors, touched,  status}) => {
   // TODO: Add useState to track data from useEffect
 
   useEffect(() => {
+    if (status) {
+      setChar([...char, status]);
+    }
+  }, [status]);
     // TODO: Add API Request here - must run in `useEffect`
     //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
   }, []);
