@@ -1,5 +1,5 @@
 import React from "react";
-import { Route } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 import Header from "./Header";
 import SearchForm from "./components/SearchForm";
 import LocationList from "./components/LocationsList";
@@ -17,7 +17,7 @@ const Tite = styled.h1`
   color: red;
   `;
 
-export default function WelcomePage() {
+ const WelcomePage = () => {
   return (
     <section className="welcome-page">
       <header>
@@ -40,3 +40,5 @@ export default function WelcomePage() {
     </section>
   );
 }
+
+export default WelcomePage;
