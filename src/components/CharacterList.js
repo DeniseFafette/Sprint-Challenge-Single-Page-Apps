@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Route } from 'react-router-dom';
-import CharacterCard from './CharacterCard';
-import { withFormik, Form, Field } from 'formik';
 import axios from 'axios';
 
 const CharacterList = ( {values, errors, touched,  status}) => {

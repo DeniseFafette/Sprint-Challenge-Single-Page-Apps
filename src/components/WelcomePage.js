@@ -1,9 +1,10 @@
 import React from "react";
-import { Route, Link } from 'react-router-dom';
+import ReactDOM from "react-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Header from "./Header";
-import SearchForm from "./components/SearchForm";
-import LocationList from "./components/LocationsList";
-import CharacterList from "./components/CharacterList";
+import SearchForm from "./SearchForm";
+import LocationList from "./LocationsList";
+import CharacterList from "./CharacterList";
 import styled from 'styled-components';
 
 const Wrapper = styled.section`
@@ -28,17 +29,21 @@ const Tite = styled.h1`
           alt="rick"
         />
         <nav>
-          <Link to="/">
-            Home
-          </Link>
-          <Link to="/characters">
-            Characters
-          </Link>
+          <Link to="/">Home</Link>
+          <Link to="/characters">Characters</Link>
         </nav>
-        <Route path = "/characters" component = {CharacterList}/>
+        <Route path="/characters" component={CharacterList} />
       </header>
     </section>
   );
 }
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(
+  <Router>
+    <WelcomePage />
+  </Router>,
+  rootElement
+);
 
 export default WelcomePage;
