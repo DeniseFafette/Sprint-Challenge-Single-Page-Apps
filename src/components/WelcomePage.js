@@ -12,8 +12,8 @@ const Wrapper = styled.section`
   background: grey;
   `;
 
-const Tite = styled.h1`
-  font-size: 1.5em;
+const Title = styled.h1`
+  font-size: 2em;
   text-align: center;
   color: red;
   `;
@@ -22,7 +22,7 @@ const Tite = styled.h1`
   return (
     <section className="welcome-page">
       <header>
-        <h1>Welcome to the ultimate fan site!</h1>
+        <Title>Welcome to the ultimate fan site!</Title>
         <img
           className="main-img"
           src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
