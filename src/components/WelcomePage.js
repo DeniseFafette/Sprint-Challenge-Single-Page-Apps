@@ -1,5 +1,20 @@
 import React from "react";
 import Header from "./Header";
+import SearchForm from "./components/SearchForm";
+import LocationList from "./components/LocationsList";
+import CharacterList from "./components/CharacterList";
+import styled from 'styled-components';
+
+const Wrapper = styled.section`
+  padding: 4em;
+  background: grey;
+  `;
+
+const Tite = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: red;
+  `;
 
 export default function WelcomePage() {
   return (
