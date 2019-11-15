@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { withFormik, Form, Field } from 'formik';
 import axios from 'axios';
 
 const CharacterList = ( {values, errors, touched,  status}) => {
@@ -26,11 +27,17 @@ const CharacterList = ( {values, errors, touched,  status}) => {
   }
     // TODO: Add API Request here - must run in `useEffect`
     //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
-  }, []);
 
   return (
     <section className="character-list">
-      <h2>TODO: `array.map()` over your state here!</h2>
+      <h2>Characters</h2>
+      {char.map(char => (
+        <div key={char.id}>
+          <p>Name: {char.name}</p>
+          <p>Species: {char.species}</p>
+          <p>Picture: {char.image}</p>
+        </div>
+      ))}
     </section>
   );
-}
+};
