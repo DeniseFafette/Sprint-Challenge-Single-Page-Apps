@@ -1,4 +1,5 @@
 import React from "react";
+import { Route } from 'react-router-dom';
 import Header from "./Header";
 import SearchForm from "./components/SearchForm";
 import LocationList from "./components/LocationsList";
@@ -26,6 +27,15 @@ export default function WelcomePage() {
           src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
           alt="rick"
         />
+        <nav>
+          <Link to="/">
+            Home
+          </Link>
+          <Link to="/characters">
+            Characters
+          </Link>
+        </nav>
+        <Route path = "/characters" component = {CharacterList}/>
       </header>
     </section>
   );
