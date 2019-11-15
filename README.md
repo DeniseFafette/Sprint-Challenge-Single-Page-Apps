@@ -29,6 +29,13 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 > Answer:
 
+Client-side routing is a JavaScript managed routing option. It offers control over your site URL & content without necessarily having to wait for a server to respond with content. It is designed to mimic the appearance of traditional multi page websites.
+
+Client-side routing uses JavaScript to maintain State or memory within our applications and use that memory to tell the Browser what to display when a resource is requested. The best part about this is that the page won’t refresh! The data is just there, displayed when we ask for it.
+
+How this works is that when a user clicks on a requested resource, instead of the client asking for that resource from the server via a URL, JavaScript will prevent this. We then get the resource (state) that is already available to us rendered out and when using react, this happens beautifully through Component-Based Architecture.
+
+
 ## Project Set Up
 
 Follow these steps to set up and work on your project:

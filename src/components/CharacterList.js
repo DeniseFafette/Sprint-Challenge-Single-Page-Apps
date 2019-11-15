@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 
-export default function CharacterList() {
+const CharacterList = ( {values, errors, touched,  status}) => {
+  const [char, setChar] = useState ([]);
+  console.log("input field touched", touched);
   // TODO: Add useState to track data from useEffect
 
   useEffect(() => {
